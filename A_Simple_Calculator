@@ -1,0 +1,37 @@
+# A Simple Calculator
+
+# Taking Input from User
+print("Enter the 1st value: ")
+user_input1 = input()
+print("Enter the 2nd value: ")
+user_input2 = input()
+print("Enter the operator: '+', '-', '*', '/', '**', '//', '%', 'percentage': ")
+user_input3 = input()
+
+# Declaring Conditions
+if user_input3 == '+':
+    answer = int(user_input1) + int(user_input2)
+    print(answer)
+elif user_input3 == '-':
+    answer = int(user_input1) - int(user_input2)
+    print(answer)
+elif user_input3 == '*':
+    answer = int(user_input1) * int(user_input2)
+    print(answer)
+elif user_input3 == '/':
+    answer = int(user_input1) / int(user_input2)
+    print(answer)
+elif user_input3 == '**':
+    answer = int(user_input1) ** int(user_input2)
+    print(answer)
+elif user_input3 == '//':
+    answer = int(user_input1) // int(user_input2)
+    print(answer)
+elif user_input3 == '%':
+    answer = int(user_input1) % int(user_input2)
+    print(answer)
+elif user_input3 == 'percentage':
+    answer = (int(user_input1) / int(user_input2)) * 100
+    print(answer)
+else:
+    print("Choose correct option.")
